@@ -4,7 +4,7 @@ export default function Page(): JSX.Element {
   return (
     <main className="h-screen flex items-center justify-center">
       <div>
-        <Button appName="Welcome to Turborepo">
+        <Button>
           <h1>Turborepo with Tailwind</h1>
         </Button>
       </div>
