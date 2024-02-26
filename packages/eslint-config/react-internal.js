@@ -14,7 +14,12 @@ const project = resolve(process.cwd(), "tsconfig.json");
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ["eslint:recommended", "prettier", "eslint-config-turbo"],
+  extends: [
+    "@vercel/style-guide/eslint/browser",
+    "@vercel/style-guide/eslint/typescript",
+    "@vercel/style-guide/eslint/react",
+    "eslint-config-turbo"
+  ].map(require.resolve),
   plugins: ["only-warn"],
   globals: {
     React: true,
@@ -35,6 +40,7 @@ module.exports = {
     ".*.js",
     "node_modules/",
     "dist/",
+    "**/*.css"
   ],
   overrides: [
     // Force ESLint to detect .tsx files
