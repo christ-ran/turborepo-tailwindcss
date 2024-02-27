@@ -20,6 +20,9 @@ module.exports = {
     "@vercel/style-guide/eslint/react",
     "eslint-config-turbo"
   ].map(require.resolve),
+  parserOptions: {
+    project
+  },
   plugins: ["only-warn"],
   globals: {
     React: true,
@@ -27,13 +30,6 @@ module.exports = {
   },
   env: {
     browser: true,
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {
-        project,
-      },
-    },
   },
   ignorePatterns: [
     // Ignore dotfiles
@@ -46,4 +42,7 @@ module.exports = {
     // Force ESLint to detect .tsx files
     { files: ["*.js?(x)", "*.ts?(x)"] },
   ],
+  rules: {
+    "import/no-default-export": "off",
+  },
 };
