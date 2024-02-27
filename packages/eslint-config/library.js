@@ -9,7 +9,9 @@ module.exports = {
     "@vercel/style-guide/eslint/typescript",
     "eslint-config-turbo"
   ].map(require.resolve),
-  plugins: ["only-warn"],
+  parserOptions: {
+    project
+  },
   globals: {
     React: true,
     JSX: true,
@@ -24,6 +26,7 @@ module.exports = {
       },
     },
   },
+  plugins: ["only-warn"],
   ignorePatterns: [
     // Ignore dotfiles
     ".*.js",
@@ -35,4 +38,7 @@ module.exports = {
       files: ["*.js?(x)", "*.ts?(x)"],
     },
   ],
+  rules: {
+    "import/no-default-export": "off",
+  },
 };

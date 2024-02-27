@@ -12,6 +12,9 @@ module.exports = {
     "@vercel/style-guide/eslint/next",
     "eslint-config-turbo",
   ].map(require.resolve),
+  parserOptions: {
+    project
+  },
   globals: {
     React: true,
     JSX: true,

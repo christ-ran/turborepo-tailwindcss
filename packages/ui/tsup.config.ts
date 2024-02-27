@@ -1,10 +1,11 @@
-import { defineConfig, Options } from "tsup";
+import { defineConfig } from "tsup";
+import type { Options } from "tsup";
 
 export default defineConfig((options: Options) => ({
   entry: ["src/**/*.tsx"],
   format: ["esm"],
-  esbuildOptions(options) {
-    options.banner = {
+  esbuildOptions(_options) {
+    _options.banner = {
       js: '"use client"',
     };
   },
