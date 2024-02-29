@@ -19,7 +19,7 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
-    "@types/eslint": "^8.56.3",
+    "@types/eslint": "^8.56.5",
     "@types/node": "^20.11.22",
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",
