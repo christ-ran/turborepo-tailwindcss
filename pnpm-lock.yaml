@@ -94,8 +94,8 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2(webpack@5.91.0)
       tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.1
+        specifier: ^3.4.2
+        version: 3.4.2
       typescript:
         specifier: ^5.4.3
         version: 5.4.3
@@ -127,8 +127,8 @@ importers:
         specifier: ^8.4.38
         version: 8.4.38
       tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.1
+        specifier: ^3.4.2
+        version: 3.4.2
 
   packages/typescript-config: {}
 
@@ -171,8 +171,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0
       tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.1
+        specifier: ^3.4.2
+        version: 3.4.2
       tsup:
         specifier: ^8.0.2
         version: 8.0.2(postcss@8.4.38)(typescript@5.4.3)
@@ -208,8 +208,8 @@ packages:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
     engines: {node: '>=6.0.0'}
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.20
+      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
   /@babel/code-frame@7.23.5:
@@ -267,8 +267,8 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/types': 7.24.0
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.20
+      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/trace-mapping': 0.3.25
       jsesc: 2.5.2
     dev: true
 
@@ -721,15 +721,6 @@ packages:
       wrap-ansi-cjs: /wrap-ansi@7.0.0
     dev: true
 
-  /@jridgewell/gen-mapping@0.3.3:
-    resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
-    engines: {node: '>=6.0.0'}
-    dependencies:
-      '@jridgewell/set-array': 1.1.2
-      '@jridgewell/sourcemap-codec': 1.4.15
-      '@jridgewell/trace-mapping': 0.3.20
-    dev: true
-
   /@jridgewell/gen-mapping@0.3.5:
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
     engines: {node: '>=6.0.0'}
@@ -741,11 +732,6 @@ packages:
 
   /@jridgewell/resolve-uri@3.1.1:
     resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
-    engines: {node: '>=6.0.0'}
-    dev: true
-
-  /@jridgewell/set-array@1.1.2:
-    resolution: {integrity: sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==}
     engines: {node: '>=6.0.0'}
     dev: true
 
@@ -763,13 +749,6 @@ packages:
 
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
-    dev: true
-
-  /@jridgewell/trace-mapping@0.3.20:
-    resolution: {integrity: sha512-R8LcPeWZol2zR8mmH3JeKQ6QRCFb7XgUhV9ZlGhHLGyg4wpPiPZNQOOWhFZhxKw8u//yTbNGI42Bx/3paXEQ+Q==}
-    dependencies:
-      '@jridgewell/resolve-uri': 3.1.1
-      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   /@jridgewell/trace-mapping@0.3.25:
@@ -5803,7 +5782,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.3
+      '@jridgewell/gen-mapping': 0.3.5
       commander: 4.1.1
       glob: 10.3.10
       lines-and-columns: 1.2.4
@@ -5861,8 +5840,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /tailwindcss@3.4.1:
-    resolution: {integrity: sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==}
+  /tailwindcss@3.4.2:
+    resolution: {integrity: sha512-1kIzVecynNKMhhX8mPTOwTkkVHupUTMbEvk4n1ByxdM8sQTJ8fE41Y4TdORG6GmiVXHhfZ/++0hiIFJFwfadsA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
