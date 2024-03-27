@@ -39,5 +39,8 @@ module.exports = {
   overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
   rules: {
     "import/no-default-export": "off",
+    "react/no-unknown-property": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "no-lone-blocks": "off"
   },
 };

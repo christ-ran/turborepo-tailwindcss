@@ -1,13 +1,17 @@
-import { Button } from "@repo/ui";
+"use client";
+
+import { Canvas } from "@react-three/fiber";
+import { logging } from "@repo/utils";
+import Mesh from "../components/mesh";
 
 export default function Page(): JSX.Element {
+  logging("Hello world!");
+
   return (
-    <main className="h-screen flex items-center justify-center">
-      <div>
-        <Button>
-          <h1>Turborepo with Tailwind</h1>
-        </Button>
-      </div>
+    <main className="h-screen w-full">
+      <Canvas>
+        <Mesh />
+      </Canvas>
     </main>
   );
 }
